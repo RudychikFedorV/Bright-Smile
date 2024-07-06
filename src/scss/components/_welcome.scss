@@ -1,0 +1,36 @@
+.welcome {
+  background-color: var(--color-1);
+  &-content {
+    @include flex-spaceBetween-center;
+    gap: 16px;
+  }
+  &-left {
+    &__txt {
+      font: var(--txt-700-18-100-ff);
+      text-transform: uppercase;
+      color: var(--c-text-white);
+      margin-bottom: 27px;
+    }
+    &__title {
+      font: var(--txt-900-80-100-ff);
+      text-transform: uppercase;
+      color: var(--c-text-white);
+      margin-bottom: 22px;
+      margin-right: -100px;
+    }
+    &__info {
+      max-width: 526px;
+      font: var(--txt-400-18-176-ff);
+      color: var(--color-8);
+      margin-bottom: 42px;
+    }
+    &__btns {
+      display: flex;
+      gap: 24px;
+    }
+  }
+  &-right {
+    padding-top: 17px;
+    flex-shrink: 0;
+  }
+}

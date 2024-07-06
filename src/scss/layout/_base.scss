@@ -12,19 +12,28 @@ body {
   padding: 0 15px;
   width: 100%;
 }
-
-.btn-1 {
+.btns {
   display: inline-block;
-  background: var(--color-1);
-  padding: 16px 30px;
-  border-radius: 29px;
   font: var(--txt-700-16-100-ff);
   text-transform: uppercase;
+  border-radius: 36px;
   color: var(--c-text-white);
   white-space: nowrap;
   transition: var(--transition);
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     color: var(--color-black);
   }
+}
+.btn1 {
+  background: var(--color-1);
+  padding: 16px 30px;
+}
+.btn2 {
+  padding: 20px 42px;
+  background: var(--color-2);
+}
+.btn3 {
+  padding: 20px 42px;
+  border: 1px solid var(--c-text-white);
 }

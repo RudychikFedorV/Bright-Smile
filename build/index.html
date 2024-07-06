@@ -19,20 +19,20 @@
 
 <body>
 
-	<header class="header">
+	<header class="header" aria-level="header section">
 	<div class="container">
-		<div class="header-content">
+		<div class="header-content" aria-level="header content block">
 
-			<a href="/" class="header-left">
+			<a href="/" class="header-left" aria-level="header left block logo">
 				<img src="img/header/logo.png" alt="Bright  Smile" class="header-left__logo">
 			</a>
 
-			<div class="header-right">
+			<div class="header-right" aria-level="header right block">
 
-				<div class="header-top">
+				<div class="header-top" aria-level="header right top block">
 					<div class="header-info">
 						<a href="#!" class="header-item">
-							<div class="header-item__social">
+							<div class="header-item__social" aria-level="social address">
 								<svg class="header-item__social-icon" width="40" height="40">
 									<use xlink:href="img/sprites.svg#header-address_icon"></use>
 								</svg>
@@ -43,7 +43,7 @@
 							</div>
 						</a>
 						<a href="tel:+(6) 666-653-4523" class="header-item">
-							<div class="header-item__social">
+							<div class="header-item__social" aria-level="social phone">
 								<svg class="header-item__social-icon" width="40" height="40">
 									<use xlink:href="img/sprites.svg#header-phone_icon"></use>
 								</svg>
@@ -54,7 +54,7 @@
 							</div>
 						</a>
 						<a href="mailto:example@gmail.com" class="header-item">
-							<div class="header-item__social">
+							<div class="header-item__social" aria-level="social email">
 								<svg class="header-item__social-icon" width="40" height="40">
 									<use xlink:href="img/sprites.svg#header-email_icon"></use>
 								</svg>
@@ -65,20 +65,20 @@
 							</div>
 						</a>
 					</div>
-					<div class="header-socials">
-						<a href="#!" class="header-socials__link">
+					<div class="header-socials" aria-level="header socials">
+						<a href="#!" class="header-socials__link" aria-level="header whatsapp">
 							<svg class="header-socials__icon" width="40" height="41">
 								<use xlink:href="img/sprites.svg#header-whatsapp"></use>
 							</svg>
 						</a>
 
-						<a href="#!" class="header-socials__link">
+						<a href="#!" class="header-socials__link" aria-level="header telegram">
 							<svg class="header-socials__icon" width="40" height="41">
 								<use xlink:href="img/sprites.svg#header-telegram"></use>
 							</svg>
 						</a>
 
-						<a href="#!" class="header-socials__link">
+						<a href="#!" class="header-socials__link" aria-level="header twitter">
 							<svg class="header-socials__icon" width="40" height="42">
 								<use xlink:href="img/sprites.svg#header-twitter"></use>
 							</svg>
@@ -87,9 +87,8 @@
 					</div>
 				</div>
 
-				<div class="header-bottom">
-					<nav class="header-nav">
-						<div class="header-backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+				<div class="header-bottom" aria-level="header bottom block">
+					<nav class="header-nav" aria-level="header nav">
 						<ul class="header-nav__list" id="headerUl">
 							<li class="header-nav__item"><a class="active header-nav__link" href="#!">Home</a></li>
 							<li class="header-nav__item"><a class="header-nav__link" href="#!">About</a></li>
@@ -114,7 +113,7 @@
 							<li class="header-nav__item"><a class="header-nav__link" href="#!">Contact</a></li>
 						</ul>
 					</nav>
-					<a href="#!" class="header-btn btn-1">Appointment Now</a>
+					<a href="#!" class="header-btn btns btn1">Appointment Now</a>
 				</div>
 
 			</div>
@@ -122,7 +121,28 @@
 		</div>
 	</div>
 </header>
-	<!-- <main class="main"> </main> -->
+	<main class="main">
+		<section class="welcome" aria-level="welcome section">
+	<div class="container">
+		<div class="welcome-content" aria-level="welcome content block">
+			<div class="welcome-left" aria-level="welcome left block">
+				<p class="welcome-left__txt">Welcome to our clinic</p>
+				<h1 class="welcome-left__title">Dental Clinic BRIGHT SMILE</h1>
+				<h3 class="welcome-left__info">We at Bright Smile are always fully focused on helping your child and you
+					to overcame any hurdle, whether it’s chicken pox or just a seasonal flue.
+				</h3>
+				<div class="welcome-left__btns">
+					<a href="#!" class="welcome-left__btns-btn2 btns btn2">See All Services</a>
+					<a href="#!" class="welcome-left__btns-btn3 btns btn3">Contact Us</a>
+				</div>
+			</div>
+			<div class="welcome-right" aria-level="welcome right block img">
+				<img src="img/welcome/banner.png" alt="welcome banner">
+			</div>
+		</div>
+	</div>
+</section>
+	</main>
 	
 
 	<script src="./js/index.bundle.js"></script>
