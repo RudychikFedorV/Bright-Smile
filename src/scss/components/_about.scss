@@ -1,0 +1,107 @@
+.about {
+  padding: 60px 0 80px;
+
+  // about-top
+  &-top {
+    @include flex-spaceBetween-center;
+    padding-bottom: 60px;
+    border-bottom: var(--c-border-bottom);
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    transition: var(--transition);
+    &:hover {
+      opacity: 0.8;
+    }
+    &__img {
+      padding: 20px;
+      border-radius: 100%;
+      background-color: var(--color-1);
+      transition: var(--transition);
+      &:hover {
+        background-color: var(--color-2);
+      }
+    }
+    &__text {
+      max-width: 253px;
+      &-title {
+        font: var(--txt-500-22-132-ff);
+        color: var(--color-black);
+        margin-bottom: 10px;
+      }
+      &-desc {
+        font: var(--txt-400-16-132-ff);
+        color: var(--color-text);
+      }
+    }
+  }
+
+  // about-bottom
+  &-bottom {
+    padding-top: 80px;
+    display: flex;
+    gap: 45px;
+  }
+  &-info {
+    max-width: 555px;
+    &__txt {
+      font: var(--txt-500-22-149-ff);
+      text-transform: uppercase;
+      color: var(--color-1);
+    }
+    &__title {
+      font: var(--txt-700-44-149-ff);
+      color: var(--color-9);
+      margin-bottom: 20px;
+    }
+    &__desc {
+      font: var(--txt-400-18-185-ff);
+      color: var(--color-text);
+      margin-bottom: 34px;
+    }
+    &__blocks {
+      position: relative;
+      max-width: 488px;
+      padding: 45px 0px 55px;
+      border: 1px solid var(--color-1);
+      border-radius: 20px;
+      &-span1 {
+        position: absolute;
+        bottom: 195px;
+        left: 20%;
+        transform: translateX(-20%);
+        background-color: var(--c-background-color-span);
+        width: 280px;
+        height: 1px;
+        transform: rotate(-90deg);
+      }
+      &-span2 {
+        position: absolute;
+        background-color: var(--c-background-color-span);
+        width: 276px;
+        height: 1px;
+        bottom: 195px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__block {
+      @include flex-spaceAround-center;
+      gap: 28px;
+    }
+    &__statistics {
+      text-align: center;
+      &-number {
+        font: var(--txt-700-50-155-ff);
+        color: var(--color-1);
+      }
+      &-desc {
+        font: var(--txt-400-16-150-ff);
+        color: var(--color-text);
+        margin-bottom: 17px;
+      }
+    }
+  }
+}

@@ -5,10 +5,17 @@
   --transition: 0.2s all ease-in-out;
 
   --txt-900-80-100-ff: normal 900 80px / 100% var(--ff);
+  --txt-700-50-155-ff: normal 700 50px / 155% var(--ff);
+  --txt-700-44-149-ff: normal 700 44px / 149% var(--ff);
   --txt-700-18-100-ff: normal 700 18px / 100% var(--ff);
   --txt-700-16-100-ff: normal 700 16px / 100% var(--ff);
   --txt-700-14-100-ff: normal 700 14px / 100% var(--ff);
+  --txt-500-22-149-ff: normal 500 22px / 149% var(--ff);
+  --txt-500-22-132-ff: normal 500 22px / 132% var(--ff);
+  --txt-400-18-185-ff: normal 400 18px / 185% var(--ff);
   --txt-400-18-176-ff: normal 400 18px / 176% var(--ff);
+  --txt-400-16-150-ff: normal 400 16px / 150% var(--ff);
+  --txt-400-16-132-ff: normal 400 16px / 132% var(--ff);
   --txt-400-16-100-ff: normal 400 16px / 100% var(--ff);
   --txt-400-12-100-ff: normal 400 12px / 100% var(--ff);
 
@@ -23,6 +30,8 @@
   --color-6: #dadada;
   --color-7: #e1e1e1;
   --color-8: #dedcdc;
+  --color-9: #000;
   --c-box-shadow-sub-menu: 0 3px 8px 1px rgba(0, 0, 0, 0.07);
-
+  --c-background-color-span: rgba(37, 129, 217, 0.35);
+  --c-border-bottom: 1px solid #e3e3e3;
 }

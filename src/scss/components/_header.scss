@@ -1,5 +1,9 @@
 .header {
-  background-color: var(--color-1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   &-content {
     display: flex;
   }

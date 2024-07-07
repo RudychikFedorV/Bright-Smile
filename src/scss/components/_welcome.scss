@@ -1,5 +1,9 @@
 .welcome {
-  background-color: var(--color-1);
+  padding-top: 185px;
+  background-image: url(../img/welcome/wrapper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   &-content {
     @include flex-spaceBetween-center;
     gap: 16px;
