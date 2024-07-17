@@ -49,6 +49,11 @@ $mobile-small: 480px;
   transition: var(--transition);
 }
 
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @mixin flex-spaceBetween-center {
   display: flex;
   justify-content: space-between;
