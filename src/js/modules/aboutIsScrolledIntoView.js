@@ -36,5 +36,6 @@ function aboutIsScrolledIntoView() {
       counted = true;
     }
   });
+  
 }
 export default aboutIsScrolledIntoView;
