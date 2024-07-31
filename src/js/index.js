@@ -7,6 +7,9 @@ aboutIsScrolledIntoView();
 import whyProgressAnimationDone from './modules/progress.js';
 whyProgressAnimationDone();
 
+import faqAccordion from './modules/faq-accordion.js';
+faqAccordion();
+
 
 
 

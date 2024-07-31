@@ -49,3 +49,14 @@ body {
 .mb-60{
   margin-bottom: 60px;
 }
+.text-white{
+ color: var(--c-text-white) !important;
+} 
+.faq-element {
+  position: absolute;
+  top: 0;
+  left: 63px;
+  padding: 24px 23px;
+  background: var(--color-1);
+  border-radius: 0 0 32px 32px;
+}
