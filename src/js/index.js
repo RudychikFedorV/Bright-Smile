@@ -10,6 +10,10 @@ whyProgressAnimationDone();
 import faqAccordion from './modules/faq-accordion.js';
 faqAccordion();
 
+import swiperTestimonials from "./modules/swiper-testimonials.js";
+swiperTestimonials();
+
+
 
 
 

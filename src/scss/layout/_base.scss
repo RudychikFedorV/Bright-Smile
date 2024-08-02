@@ -43,15 +43,18 @@ body {
 .py-100 {
   padding: 100px 0;
 }
-.title-center{
+.title-center {
   text-align: center;
 }
-.mb-60{
+.d-flex {
+  display: flex;
+}
+.mb-60 {
   margin-bottom: 60px;
 }
-.text-white{
- color: var(--c-text-white) !important;
-} 
+.text-white {
+  color: var(--c-text-white) !important;
+}
 .faq-element {
   position: absolute;
   top: 0;
@@ -59,4 +62,20 @@ body {
   padding: 24px 23px;
   background: var(--color-1);
   border-radius: 0 0 32px 32px;
+}
+.swiper-pagination {
+  position: static !important;
+}
+.swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 100% !important;
+  background-color: var(--color-1) !important;
+  transition: var(--transition-2);
+}
+.swiper-pagination-bullet-active {
+  border-radius: 23px !important;
+  width: 30px !important;
+  height: 13px !important;
+  background: var(--color-1) !important;
 }
