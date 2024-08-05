@@ -1,0 +1,76 @@
+.pricing {
+  &-table {
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid var(--color-13);
+  }
+  &-item {
+    width: 33.333%;
+  }
+  &-item:nth-child(2) {
+    background: var(--color-14);
+  }
+  &-item:nth-child(2) .pricing-header__price {
+    background: var(--color-1);
+  }
+  // pricing-header
+  &-header {
+    text-align: center;
+    &__title {
+      font: var(--txt-700-24-185-ff);
+      text-transform: uppercase;
+      color: var(--color-black);
+      padding: 15px;
+    }
+    &__price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-2);
+      column-gap: 11px;
+      padding: 20px;
+      &-big {
+        font: var(--txt-700-35-100-ff);
+        text-transform: uppercase;
+        color: var(--c-text-white);
+      }
+      &-month {
+        font: var(--txt-500-16-136-ff);
+        color: var(--c-text-white);
+      }
+    }
+  }
+  // pricing-body
+  &-list__item {
+    padding: 15px 30px;
+    font: var(--txt-400-16-185-ff);
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-15);
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  &-list__item::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/pricing/chek.svg);
+    background-size: 9px 9px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    background-color: var(--color-1);
+  }
+  &-list__item-off {
+    color: var(--color-16);
+  }
+  &-list__item-off::before {
+    background-color: var(--color-16);
+  }
+  // btn
+  .header-btn {
+    margin-right: inherit;
+    margin-bottom: 27px;
+  }
+}

@@ -46,9 +46,11 @@
         width: 26px;
         height: 26px;
         @include flex-center-center;
+        text-align: center;
         transition: var(--transition);
         img {
           transition: var(--transition);
+          display: block;
         }
         &:hover {
           background-color: var(--color-1);
@@ -63,17 +65,20 @@
     text-align: center;
 
     &__title {
-      font:var(--txt-700-20-149-ff);
+      font: var(--txt-700-20-149-ff);
       color: var(--color-9);
       margin-bottom: 6px;
     }
     &__spec {
-      font:var(--txt-500-14-149-ff);
+      font: var(--txt-500-14-149-ff);
       text-transform: uppercase;
       color: var(--color-text);
     }
   }
-  &-btn{
+  &-btn {
     margin-top: 40px;
+  }
+  .header-btn {
+    margin-right: inherit;
   }
 }
