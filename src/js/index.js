@@ -16,7 +16,8 @@ swiperTestimonials();
 import magnificPopup from "./modules/magnificPopup";
 magnificPopup();
 
-
+import swiperGallery from "./modules/swiper-gallery.js";
+swiperGallery();
 
 
 

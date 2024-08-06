@@ -1,0 +1,49 @@
+.gallery {
+  position: relative;
+  &::before {
+    content: "";
+    background-color: var(--color-3);
+    background-image: url(../img/gallery/g-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1380px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .why-block1{
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  &-item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 520px;
+    &:hover .gallery-popup {
+      opacity: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: static;
+    margin-top: 50px;
+    max-width: 316px;
+    width: 100%;
+    height: 10px;
+    border-radius: 18px;
+    margin-inline: auto;
+    background-color: rgba(37, 129, 217, 0.2);
+  }
+  .swiper-scrollbar-drag {
+    background-color: var(--color-1);
+    cursor: pointer;
+  }
+}
