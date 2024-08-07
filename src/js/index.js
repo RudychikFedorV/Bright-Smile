@@ -19,6 +19,9 @@ magnificPopup();
 import swiperGallery from "./modules/swiper-gallery.js";
 swiperGallery();
 
+import swiperBlogs from "./modules/swiper-blogs.js";
+swiperBlogs();
+
 
 
 

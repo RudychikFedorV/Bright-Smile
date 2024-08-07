@@ -1,0 +1,35 @@
+.blogs {
+  background-color: #faf8f8;
+  &-row {
+    position: relative;
+    align-items: center;
+    column-gap: 35px;
+    padding-left: 120px;
+  }
+  .faq-element {
+    left: 120px;
+  }
+  &-left {
+    max-width: 400px;
+    width: 100%;
+  }
+  &-right {
+    width: 100%;
+  }
+  .swiper {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+//   .swiper-wrapper {
+//     display: flex;
+//   }
+  .swiper-slide {
+    max-width: 335px;
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    margin-top: 50px;
+  }
+}
