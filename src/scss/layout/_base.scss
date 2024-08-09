@@ -20,6 +20,7 @@ body {
   color: var(--c-text-white);
   white-space: nowrap;
   transition: var(--transition);
+  cursor: pointer;
   &:hover {
     opacity: 0.7;
     color: var(--color-black);
@@ -84,4 +85,46 @@ body {
 }
 .btn-margin-right {
   margin-right: 0 !important;
+}
+// appointment-form
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="submit"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input[type="date"],
+input[type="datetime"],
+textarea,
+select {
+  border: 1px solid var(--color-18);
+  border-radius: 5px;
+  background-color: var(--color-19);
+  padding: 15px 23px;
+  outline: none;
+  width: 100%;
+  font: var(--txt-400-16-100-ff);
+  color: var(--color-9);
+  &::placeholder {
+    font: var(--txt-400-16-100-ff);
+    color: var(--color-20);
+  }
+}
+select {
+  appearance: none;
+  background-image: url(../img/appointment/caret.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: 95% center;
+  color: var(--color-20);
 }
