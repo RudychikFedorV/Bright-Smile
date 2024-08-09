@@ -1,0 +1,34 @@
+.partners {
+  .swiper-slide {
+    height: auto;
+  }
+  &-item {
+    padding: 30px 20px;
+    background-color: var(--color-1);
+    border-radius: 20px;
+    height: 100%;
+    @include flex-center-center;
+    flex-direction: column;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+      &:first-child {
+        filter: brightness(10);
+        transition: var(--transition);
+      }
+      &:last-child {
+        position: absolute;
+        transition: var(--transition);
+        transform: translateY(180px);
+        filter: blur(10px);
+      }
+    }
+    &:hover img:last-child {
+      transform: none;
+      filter: none;
+    }
+    &:hover img:first-child {
+      transform: translateY(-180px);
+    }
+  }
+}

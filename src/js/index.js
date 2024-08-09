@@ -22,6 +22,8 @@ swiperGallery();
 import swiperBlogs from "./modules/swiper-blogs.js";
 swiperBlogs();
 
+import swiperPartners from "./modules/swiper-partners.js";
+swiperPartners();
 
 
 
