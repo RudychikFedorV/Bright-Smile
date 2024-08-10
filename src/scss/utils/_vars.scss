@@ -20,6 +20,7 @@
   --txt-700-18-100-ff: normal 700 18px / 100% var(--ff);
   --txt-700-16-100-ff: normal 700 16px / 100% var(--ff);
   --txt-700-14-100-ff: normal 700 14px / 100% var(--ff);
+  --txt-600-20-100-ff: normal 600 20px / 100% var(--ff);
   --txt-500-65-147-ff: normal 500 65px / 147% var(--ff);
   --txt-500-22-149-ff: normal 500 22px / 149% var(--ff);
   --txt-500-22-132-ff: normal 500 22px / 132% var(--ff);
@@ -32,6 +33,7 @@
   --txt-400-16-198-ff: normal 400 16px / 198% var(--ff);
   --txt-400-16-185-ff: normal 400 16px / 185% var(--ff);
   --txt-400-16-170-ff: normal 400 16px / 170% var(--ff);
+  --txt-400-16-160-ff: normal 400 16px / 160% var(--ff);
   --txt-400-16-150-ff: normal 400 16px / 150% var(--ff);
   --txt-400-16-147-ff: normal 400 16px / 147% var(--ff);
   --txt-400-16-132-ff: normal 400 16px / 132% var(--ff);
@@ -63,13 +65,18 @@
   --color-18: #f1e8e8;
   --color-19: #f6f6f6;
   --color-20: #8a8a8a;
+  --color-21: #dad5d5;
+  --color-22: #e0e0e0;
+  --color-23: #e2dbdb;
   --c-background-faq: #00afff;
   --c-background-popup: rgba(48, 118, 184, 0.9);
   --c-background-newsletter: rgba(37, 129, 217, 0.9);
   --c-background-newsletter-form: rgba(233, 224, 224, 0.21);
+  --c-background-footer: #1f568b;
   --c-box-shadow-newsletter: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   --c-box-shadow-sub-menu: 0 3px 8px 1px rgba(0, 0, 0, 0.07);
   --c-background-color-span: rgba(37, 129, 217, 0.35);
   --c-box-shadow-team: 0 4px 18px 3px rgba(133, 123, 123, 0.14);
   --c-border-bottom: 1px solid #e3e3e3;
+  --c-border-bottom-footer: 1px solid rgba(255, 255, 255, 0.4);
 }
