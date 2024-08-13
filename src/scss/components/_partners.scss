@@ -1,18 +1,21 @@
 .partners {
   .swiper-slide {
-    height: inherit;
+    height: auto;
   }
   &-item {
+    position: relative;
     background-color: var(--color-1);
     border-radius: 20px;
-    // height: 200px;
-    height: 100% !important;
+    width: 175px;
+    height: 200px;
+    // height: 100%;
     padding: 30px 20px;
     @include flex-center-center;
     flex-direction: column;
     cursor: pointer;
-    img {
+    span {
       &:first-child {
+        position: absolute;
         filter: brightness(10);
         transition: var(--transition);
       }
@@ -23,12 +26,13 @@
         filter: blur(10px);
       }
     }
-    &:hover img:last-child {
+    &:hover span:last-child {
       transform: none;
       filter: none;
     }
-    &:hover img:first-child {
+    &:hover span:first-child {
       transform: translateY(-180px);
     }
   }
+  
 }
