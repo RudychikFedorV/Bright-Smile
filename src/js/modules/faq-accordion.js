@@ -63,5 +63,6 @@ function faqAccordion() {
     });
   });
   // FAQ ACCORDIONS END
+  
 }
 export default faqAccordion;

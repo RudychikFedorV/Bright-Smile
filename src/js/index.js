@@ -1,6 +1,9 @@
 import header from "./modules/header.js";
 header();
 
+import headerMobile from './modules/header-mobile.js';
+headerMobile();
+
 import aboutIsScrolledIntoView from './modules/aboutIsScrolledIntoView.js';
 aboutIsScrolledIntoView();
 

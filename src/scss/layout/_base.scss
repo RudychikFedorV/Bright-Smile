@@ -50,8 +50,17 @@ body {
 .title-center {
   text-align: center;
 }
+.none {
+  display: none !important;
+}
 .d-flex {
   display: flex;
+}
+.d-flex-column {
+  flex-direction: column;
+}
+.d-flex-wrap {
+  flex-wrap: wrap;
 }
 .jc-sb {
   justify-content: space-between;

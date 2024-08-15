@@ -14,6 +14,7 @@
     flex-direction: column;
     cursor: pointer;
     span {
+      display: inline-block;
       &:first-child {
         position: absolute;
         filter: brightness(10);

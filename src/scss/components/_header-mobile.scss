@@ -1,0 +1,109 @@
+.header-mobile {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 320px;
+    width: 100%;
+    transform: translateX(110%);
+    transition: var(--transition-2);
+    z-index: 2;
+  }
+  &-top {
+    background: var(--color-5);
+    padding: 13px 20px;
+  }
+  &-body {
+    background-color: var(--c-text-white);
+  }
+
+  // header-mobile-nav
+  &-nav__link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font: var(--txt-400-16-100-ff);
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-24);
+    margin-top: 15px;
+    padding: 0px 20px 18px;
+    transition: var(--transition-2);
+    &:hover {
+      color: var(--color-1);
+    }
+  }
+  .active {
+    font-weight: 700;
+    color: var(--color-1);
+  }
+  .sub-menu {
+    background-color: var(--c-text-white);
+    padding: 20px 30px 0;
+    transition: var(--transition);
+    &__txt {
+      display: block;
+      font: var(--txt-400-16-100-ff);
+      color: var(--color-black);
+      transition: var(--transition);
+      margin-bottom: 20px;
+      &:hover {
+        opacity: 0.7;
+        color: var(--color-1);
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+
+  .menu-item-plus {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 9px);
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: var(--color-25);
+    @include flex-center-center;
+  }
+
+  .header-info {
+    padding: 35px 10px;
+    row-gap: 30px;
+  }
+  .header-item__social {
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    background-color: var(--color-26);
+    @include flex-center-center;
+  }
+  .header-item__content-txt {
+    color: var(--color-27);
+  }
+  .header-item__content-desc {
+    color: var(--color-28);
+  }
+
+  &__social {
+    gap: 10px;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    &-icon {
+      border-radius: 100%;
+      background-color: var(--color-26);
+      width: 41px;
+      height: 41px;
+      @include flex-center-center;
+    }
+  }
+  .header-btn {
+    margin: 0 0 50px 10px;
+  }
+}
+.header-mobile.is-active {
+  transform: none;
+}
