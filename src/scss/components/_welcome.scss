@@ -4,11 +4,25 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  @include tablet {
+    padding-top: 85px;
+  }
   &-content {
     @include flex-spaceBetween-center;
     gap: 16px;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
   }
   &-left {
+    @include tablet {
+      flex-direction: column;
+      background: var(--color-2);
+      border-radius: 20px;
+      margin-bottom: 80px;
+      padding: 40px 30px 50px;
+      margin-top: -120px;
+    }
     &__txt {
       font: var(--txt-700-18-100-ff);
       text-transform: uppercase;
@@ -21,6 +35,18 @@
       color: var(--c-text-white);
       margin-bottom: 22px;
       margin-right: -100px;
+      @include desktop-small {
+        font: var(--txt-900-70-100-ff);
+      }
+      @include tablet {
+        margin-right: 0;
+      }
+      @include mobile{
+        font: var(--txt-900-50-100-ff);
+      }
+      @include mobile-small{
+        font: var(--txt-900-30-100-ff);
+      }
     }
     &__info {
       max-width: 526px;
@@ -31,10 +57,25 @@
     &__btns {
       display: flex;
       gap: 24px;
+      @include tablet {
+        flex-direction: column;
+        max-width: 275px;
+        text-align: center;
+      }
+      &-btn2{
+        color: var(--color-1);
+        background-color: var(--c-text-white);
+      }
     }
   }
   &-right {
     padding-top: 17px;
-    flex-shrink: 0;
+    @include tablet{
+      max-width: 600px;
+    }
+    @include mobile{
+      max-width: 366px;
+      height: 438px; 
+    }
   }
 }

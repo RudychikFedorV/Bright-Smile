@@ -1,11 +1,18 @@
 .about {
   padding: 60px 0 80px;
-
-  // about-top
+  @include mobile {
+    padding: 50px 0 60px;
+  }
+  // about-top START
   &-top {
     @include flex-spaceBetween-center;
     padding-bottom: 60px;
     border-bottom: var(--c-border-bottom);
+    @include desktop-small {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
   }
   &-item {
     display: flex;
@@ -15,6 +22,14 @@
     &:hover {
       opacity: 0.8;
     }
+    @include desktop-small {
+      flex-direction: column;
+      text-align: center;
+    }
+    @include mobile {
+      flex-direction: row;
+      gap: 20px;
+    }
     &__img {
       padding: 20px;
       border-radius: 100%;
@@ -23,29 +38,51 @@
       &:hover {
         background-color: var(--color-2);
       }
+      @include mobile {
+        width: 75px;
+        height: 75px;
+      }
     }
     &__text {
       max-width: 253px;
+      @include mobile{
+        text-align: left;
+      }
       &-title {
         font: var(--txt-500-22-132-ff);
         color: var(--color-black);
         margin-bottom: 10px;
+        @include mobile {
+          font: var(--txt-500-19-132-ff);
+        }
       }
       &-desc {
         font: var(--txt-400-16-132-ff);
         color: var(--color-text);
+        @include mobile {
+          font: var(--txt-400-14-132-ff);
+        }
       }
     }
   }
+  // about-top END
 
-  // about-bottom
+  // about-bottom START
   &-bottom {
     padding-top: 80px;
     display: flex;
     gap: 45px;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
   &-info {
     max-width: 555px;
+    @include tablet {
+      max-width: inherit;
+    }
     &__txt {
       font: var(--txt-500-22-149-ff);
       text-transform: uppercase;
@@ -55,6 +92,9 @@
       font: var(--txt-700-44-149-ff);
       color: var(--color-9);
       margin-bottom: 20px;
+      @include mobile {
+        font: var(--txt-700-34-149-ff);
+      }
     }
     &__desc {
       font: var(--txt-400-18-185-ff);
@@ -68,9 +108,12 @@
       padding: 45px 40px 55px;
       border: 1px solid var(--color-1);
       border-radius: 20px;
-
       display: flex;
       flex-wrap: wrap;
+      @include tablet {
+        margin-inline: auto;
+        padding: 30px 25px 40px;
+      }
     }
     &__statistics {
       text-align: center;
@@ -84,11 +127,17 @@
       &-number {
         font: var(--txt-700-50-155-ff);
         color: var(--color-1);
+        @include mobile {
+          font: var(--txt-700-36-155-ff);
+        }
       }
       &-desc {
         font: var(--txt-400-16-150-ff);
         color: var(--color-text);
         margin-bottom: 17px;
+        @include mobile {
+          font: var(--txt-400-10-150-ff);
+        }
       }
     }
   }
@@ -105,6 +154,13 @@
       &:nth-child(1) {
         min-width: 154px;
         width: 154px;
+        @include desktop-small {
+          min-width: 130px;
+          width: 130px;
+        }
+        @include tablet {
+          display: none;
+        }
         img {
           object-position: left top;
         }
@@ -112,13 +168,27 @@
       &:nth-child(2) {
         min-width: 259px;
         width: 259px;
+        @include desktop-small {
+          min-width: 200px;
+          width: 200px;
+        }
+        @include tablet {
+          min-width: auto;
+          width: 100%;
+        }
         img {
           object-position: 68% top;
+          @include desktop-small {
+            object-position: 76% top;
+          }
         }
       }
       &:nth-child(3) {
         min-width: 75px;
         width: 75px;
+        @include tablet {
+          display: none;
+        }
         img {
           object-position: right top;
         }
@@ -130,4 +200,5 @@
       }
     }
   }
+  // about-bottom END
 }
