@@ -6,19 +6,35 @@
     border-radius: 20px;
     @include flex-spaceBetween-center;
     gap: 10px;
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      padding: 49px 20px 60px;
+    }
   }
 
   &-left {
     padding-top: 50px;
     max-width: 500px;
     color: var(--c-text-white);
+    @include desktop-small {
+      max-width: 400px;
+    }
+    @include tablet {
+      max-width: inherit;
+    }
   }
+  
   // faq-right
   &-right {
     display: grid;
     row-gap: 20px;
     max-width: 576px;
     width: 100%;
+    @include tablet {
+      max-width: inherit;
+    }
   }
   &-item {
     background: var(--c-text-white);
@@ -26,6 +42,9 @@
     border-radius: 10px;
     padding: 22px 30px;
     cursor: pointer;
+    @include mobile {
+      padding: 10px 14px;
+    }
   }
   &-item.is-active &-question::after {
     transform: rotate(45deg);
@@ -34,6 +53,9 @@
     display: flex;
     column-gap: 12px;
     position: relative;
+    @include mobile {
+      column-gap: 5px;
+    }
     &::after {
       content: "+";
       font: var(--txt-300-32-100-ff);
@@ -41,14 +63,23 @@
       top: 0;
       right: 0;
       transition: var(--transition);
+      @include mobile {
+        font: var(--txt-300-18-100-ff);
+      }
     }
     &__num {
       font: var(--txt-700-18-147-ff);
       color: var(--color-9);
+      @include mobile {
+        font: var(--txt-700-14-147-ff);
+      }
     }
     &__text {
       font: var(--txt-500-18-147-ff);
       color: var(--color-9);
+      @include mobile {
+        font: var(--txt-500-14-147-ff);
+      }
     }
   }
   &-answer {
@@ -58,5 +89,8 @@
     font: var(--txt-400-16-147-ff);
     color: var(--color-text);
     border-top: 1px solid var(--color-12);
+    @include mobile {
+      font: var(--txt-400-12-170-ff);
+    }
   }
 }
