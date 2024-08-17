@@ -15,6 +15,12 @@
   }
   &-content {
     column-gap: 40px;
+    @include desktop-small {
+      column-gap: 20px;
+    }
+    @include tablet {
+      flex-direction: column;
+    }
   }
   .swiper-slide {
     padding: 0;
@@ -25,6 +31,12 @@
   &-left {
     border-radius: 17px;
     overflow: hidden;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      display: none;
+    }
     img {
       display: block;
       width: 100%;
@@ -35,9 +47,15 @@
   &-right {
     max-width: 615px;
     padding: 0;
+    @include desktop-small {
+      max-width: 500px;
+    }
+    @include tablet {
+      width: 100%;
+      max-width: inherit;
+    }
   }
 }
 .swiper-testimonials .swiper-pagination {
   margin-top: 130px;
 }
-

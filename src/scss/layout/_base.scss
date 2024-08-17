@@ -146,13 +146,14 @@ select {
   background-position: 95% center;
   color: var(--color-20);
 }
-.why-block1__desc{
-  @include mobile{
-    font: var(--txt-500-22-149-ff);
+.why-block1__desc {
+  @include mobile {
+    font: var(--txt-500-22-149-ff) !important;
   }
 }
-.why-block1__title{
-  @include mobile{
-    font: var(--txt-700-34-149-ff);
+.why-block1__title {
+  @include mobile {
+    font: var(--txt-700-34-149-ff) !important;
   }
 }
+

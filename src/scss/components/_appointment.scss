@@ -7,6 +7,9 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 20px;
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &-left {
@@ -15,6 +18,11 @@
     max-height: 714px;
     overflow: hidden;
     flex-shrink: 0;
+    @include tablet {
+      width: 100%;
+      max-width: inherit;
+      margin-bottom: 30px;
+    }
     img {
       display: block;
       width: 100%;
@@ -25,13 +33,21 @@
   &-right {
     max-width: 650px;
   }
-// appointment-form
+  // appointment-form
   .form-input {
     display: flex;
     column-gap: 16px;
     margin-bottom: 20px;
+    @include mobile {
+      flex-direction: column;
+    }
+    input:nth-child(1) {
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
   }
-  textarea{
+  textarea {
     min-height: 111px;
     resize: vertical;
     margin-bottom: 20px;

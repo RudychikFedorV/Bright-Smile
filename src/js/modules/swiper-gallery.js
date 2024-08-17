@@ -4,18 +4,38 @@ function swiperGallery() {
   const swiper = new Swiper(".swiper-gallery", {
     // direction: 'vertical',
     loop: true,
-    slidesPerView: 4,
     parallax: true,
     speed: 1000,
-    spaceBetween: 0,
     keyboard: {
       enabled: true,
     },
     scrollbar: {
       el: ".swiper-gallery .swiper-scrollbar",
       draggable: true,
-      dragSize:56,
+      dragSize: 56,
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 0
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 0
+      }
+    }
   });
 }
 export default swiperGallery;

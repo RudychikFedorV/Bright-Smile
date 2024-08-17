@@ -3,6 +3,9 @@
   border: 1px solid var(--color-12);
   border-radius: 20px;
   background-color: var(--c-text-white);
+  @include mobile-small{
+    max-width: 290px;
+  }
 
   &__img {
     position: relative;

@@ -5,13 +5,30 @@
     align-items: center;
     column-gap: 35px;
     padding-left: 120px;
+    @include tablet {
+      padding-left: 15px;
+      column-gap: 25px;
+    }
+    @include tablet-small {
+      flex-direction: column;
+    }
   }
   .faq-element {
     left: 120px;
+    @include tablet {
+      left: 15px;
+    }
+    @include mobile {
+      display: none;
+    }
   }
   &-left {
     max-width: 400px;
     width: 100%;
+    @include tablet-small{
+      max-width: inherit;
+      text-align: center;
+    }
   }
   &-right {
     width: 100%;
@@ -20,9 +37,9 @@
     margin-left: inherit;
     margin-right: inherit;
   }
-//   .swiper-wrapper {
-//     display: flex;
-//   }
+  //   .swiper-wrapper {
+  //     display: flex;
+  //   }
   .swiper-slide {
     max-width: 335px;
   }

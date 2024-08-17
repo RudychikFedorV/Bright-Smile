@@ -12,6 +12,14 @@
     @include flex-center-center;
     flex-direction: column;
     cursor: pointer;
+    @include mobile {
+      width: 162px;
+      height: 185px;
+    }
+    @include mobile-small {
+      width: 142px;
+      height: 165px;
+    }
     span {
       display: inline-block;
       &:first-child {
@@ -34,5 +42,4 @@
       transform: translateY(-180px);
     }
   }
-  
 }
