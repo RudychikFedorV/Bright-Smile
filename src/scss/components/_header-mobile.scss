@@ -9,7 +9,7 @@
     width: 100%;
     transform: translateY(-110%);
     transition: var(--transition-2);
-    z-index: 2;
+    z-index: 999;
   }
   &-top {
     background: var(--color-5);

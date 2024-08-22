@@ -1,0 +1,26 @@
+.breadcrumbs {
+  background-image: url(../img/breadcrumbs/breadcrumbs-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 0 90px;
+  @include mobile {
+    padding: 150px 0 90px;
+  }
+  &-title {
+    font: var(--txt-700-42-100-ff);
+    color: var(--c-text-white);
+    margin-bottom: 15px;
+  }
+  &-nav__ul {
+    column-gap: 5px;
+    color: var(--c-text-white);
+  }
+  &-nav__link {
+    font: var(--txt-400-18-100-ff);
+    color: var(--c-text-white);
+  }
+  &-nav__last {
+    font: var(--txt-700-18-100-ff);
+    color: var(--c-text-white);
+  }
+}

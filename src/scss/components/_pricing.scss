@@ -55,18 +55,18 @@
     display: flex;
     align-items: center;
     column-gap: 12px;
-  }
-  &-list__item::before {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/pricing/chek.svg);
-    background-size: 9px 9px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 21px;
-    border-radius: 100%;
-    background-color: var(--color-1);
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url(../img/pricing/chek.svg);
+      background-size: 9px 9px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 21px;
+      border-radius: 100%;
+      background-color: var(--color-1);
+    }
   }
   &-list__item-off {
     color: var(--color-16);
