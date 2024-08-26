@@ -12,6 +12,9 @@
     @include mobile {
       padding: 49px 20px 60px;
     }
+    @include mobile-small{
+      padding: 49px 5px 60px;
+    }
   }
 
   &-left {
@@ -44,6 +47,9 @@
     cursor: pointer;
     @include mobile {
       padding: 10px 14px;
+    }
+    @include mobile-small {
+      padding: 10px 5px;
     }
   }
   &-item.is-active &-question::after {

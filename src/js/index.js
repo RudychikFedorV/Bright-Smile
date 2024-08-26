@@ -34,4 +34,7 @@ swiperPartners();
 import swiperServicesV2 from "./modules/swiper-services-v2.js";
 swiperServicesV2();
 
+import startTimers from "./modules/startTimer.js";
+startTimers();
+
 document.getElementById("copyright").textContent = new Date().getFullYear();

@@ -28,7 +28,7 @@
     border: 1px solid var(--color-18);
     border-radius: 50px;
     background-color: var(--c-background-newsletter-form);
-    @include tablet{
+    @include tablet {
       max-width: inherit;
       margin-bottom: 20px;
     }
@@ -43,15 +43,27 @@
     button {
       margin: 7px 7px 7px 0;
     }
+    .newsletter-btn-1 {
+      @include mobile-small {
+        display: none;
+      }
+    }
+    .newsletter-btn-2 {
+      display: none;
+      @include mobile-small {
+        display: block;
+        padding: 0;
+      }
+    }
   }
   &-right img {
     display: block;
     max-width: 356px;
-    @include tablet{
+    @include tablet {
       width: 100%;
       max-width: inherit;
     }
-    @include mobile{
+    @include mobile {
       display: none;
     }
   }

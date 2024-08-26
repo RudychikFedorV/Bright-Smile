@@ -55,7 +55,10 @@
       max-width: inherit;
     }
   }
-}
-.swiper-testimonials .swiper-pagination {
-  margin-top: 130px;
+  .swiper-pagination {
+    margin-top: 130px;
+    @include mobile-small {
+      margin-top: 120px;
+    }
+  }
 }
