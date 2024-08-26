@@ -18,12 +18,22 @@
 </head>
 
 <body>
-	  @@include('blocks/header.html')
+	@@include('blocks/header.html')
 	<main class="main">
 		@@include('blocks/breadcrumbs.html')
 		@@include('blocks/about-v2.html')
 		@@include('blocks/statistics-v2.html')
 		@@include('blocks/services-v2.html')
+		<div class="partners-v2 margin-bottom--100">
+			@@include('blocks/partners.html')
+		</div>
+		@@include('blocks/team.html')
+		<div class="video-v2 mb-100">
+			@@include('blocks/video.html')
+		</div>
+		@@include('blocks/why.html')
+		@@include('blocks/testimonials-v2.html')
+
 	</main>
 	@@include('blocks/footer.html')
 

@@ -16,6 +16,9 @@ faqAccordion();
 import swiperTestimonials from "./modules/swiper-testimonials.js";
 swiperTestimonials();
 
+import swiperTestimonialsV2 from "./modules/swiper-testimonials-v2.js";
+swiperTestimonialsV2();
+
 import magnificPopup from "./modules/magnificPopup";
 magnificPopup();
 
