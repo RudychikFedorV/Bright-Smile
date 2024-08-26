@@ -1,16 +1,16 @@
 import header from "./modules/header.js";
 header();
 
-import headerMobile from './modules/header-mobile.js';
+import headerMobile from "./modules/header-mobile.js";
 headerMobile();
 
-import aboutIsScrolledIntoView from './modules/aboutIsScrolledIntoView.js';
+import aboutIsScrolledIntoView from "./modules/aboutIsScrolledIntoView.js";
 aboutIsScrolledIntoView();
 
-import whyProgressAnimationDone from './modules/progress.js';
+import whyProgressAnimationDone from "./modules/progress.js";
 whyProgressAnimationDone();
 
-import faqAccordion from './modules/faq-accordion.js';
+import faqAccordion from "./modules/faq-accordion.js";
 faqAccordion();
 
 import swiperTestimonials from "./modules/swiper-testimonials.js";
@@ -28,5 +28,7 @@ swiperBlogs();
 import swiperPartners from "./modules/swiper-partners.js";
 swiperPartners();
 
+import swiperServicesV2 from "./modules/swiper-services-v2.js";
+swiperServicesV2();
 
-
+document.getElementById("copyright").textContent = new Date().getFullYear();

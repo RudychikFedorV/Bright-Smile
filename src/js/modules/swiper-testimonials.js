@@ -2,7 +2,6 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 function swiperTestimonials() {
   const swiper = new Swiper(".swiper-testimonials", {
-    // direction: 'vertical',
     loop: true,
     slidesPerView: 1,
     parallax: true,

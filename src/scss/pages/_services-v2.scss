@@ -1,3 +1,90 @@
-.services-v2{
-    
+.services-v2 {
+  overflow-x: hidden;
+  &-row {
+    gap: 50px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  // services-v2-left
+  &-left {
+    border-radius: 20px;
+    min-width: 525px;
+    width: 100%;
+    height: 802px;
+    overflow: hidden;
+    @include mobile {
+      max-width: 335px;
+      height: 406px;
+    }
+    @include mobile-small {
+      max-width: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+  // services-v2-right
+  .about-info {
+    @include desktop-small {
+      max-width: 400px;
+    }
+    @include tablet {
+      position: absolute;
+      left: 20px;
+    }
+    @include mobile-small {
+      left: 15px;
+    }
+  }
+  .swiper-services-v2 {
+    overflow: visible;
+    max-width: 1060px;
+    left: -300px;
+    @include tablet {
+      left: 60px;
+      margin-top: 300px;
+    }
+    @include mobile {
+      left: 0px;
+    }
+    @include mobile-small {
+      left: 45px;
+    }
+  }
+  .swiper-slide {
+    min-width: 290px;
+    width: 100%;
+    opacity: 0;
+  }
+  .swiper-slide-visible {
+    opacity: 1;
+  }
+  .services-item {
+    border-right: none;
+    padding: 30px 30px 50px;
+    max-width: 290px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--c-box-shadow-services);
+    background-color: var(--c-text-white);
+  }
+  .swiper-pagination {
+    margin-top: 30px;
+    @include desktop-small {
+      margin-left: -100px;
+    }
+    @include tablet {
+      text-align: center;
+      margin-left: -20px;
+    }
+    @include mobile-small {
+      text-align: center;
+      margin-left: -40px;
+    }
+  }
 }

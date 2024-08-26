@@ -1,6 +1,6 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
-function swiperGallery() {
+function swiperBlogs() {
   const swiper = new Swiper(".swiper-blogs", {
     loop: true,
     parallax: true,
@@ -20,8 +20,8 @@ function swiperGallery() {
       576: {
         slidesPerView: "auto",
         spaceBetween: 30,
-      }
+      },
     },
   });
 }
-export default swiperGallery;
+export default swiperBlogs;

@@ -18,13 +18,12 @@
 </head>
 
 <body>
-
-	@@include('blocks/header.html')
+	  @@include('blocks/header.html')
 	<main class="main">
-		@@include('pages/breadcrumbs.html')
-		@@include('pages/about-v2.html')
-		@@include('pages/statistics-v2.html')
-		@@include('pages/services-v2.html')
+		@@include('blocks/breadcrumbs.html')
+		@@include('blocks/about-v2.html')
+		@@include('blocks/statistics-v2.html')
+		@@include('blocks/services-v2.html')
 	</main>
 	@@include('blocks/footer.html')
 
@@ -32,9 +31,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src="./js/index.bundle.js"></script>
 
-	<script>
-		document.getElementById("copyright").textContent = new Date().getFullYear();
-	</script>
 
 </body>
 
