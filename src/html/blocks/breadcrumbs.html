@@ -1,12 +1,31 @@
 <section class="breadcrumbs">
     <div class="container">
-        <h1 class="breadcrumbs-title title-center">About Us</h1>
+        <h1 class="breadcrumbs-title title-center" id="breadcrumbs-title">About Us</h1>
         <nav class="breadcrumbs-nav">
             <ul class="breadcrumbs-nav__ul d-flex jc-center ai-center">
                 <li class="breadcrumbs-nav__li"><a href="index.html" class="breadcrumbs-nav__link">Home</a></li>
                 <li>/</li>
-                <li class="breadcrumbs-nav__li"><span class="breadcrumbs-nav__last">About Us</span></li>
+                <li class="breadcrumbs-nav__li"><span class="breadcrumbs-nav__last" id="breadcrumbs-last">About
+                        Us</span></li>
             </ul>
         </nav>
     </div>
 </section>
+
+<script>
+    const breadcrumbsItems = () => {
+        const pageTitles = {
+            "about.html": "About Us",
+            "services.html": "Services",
+            "service-details.html": "Service Details",
+            "contact.html": "Contact Us",
+        };
+        const currentPath = window.location.pathname.split('/').pop();
+
+        if (pageTitles[currentPath]) {
+            document.getElementById('breadcrumbs-title').textContent = pageTitles[currentPath];
+            document.getElementById('breadcrumbs-last').textContent = pageTitles[currentPath];
+        }
+    }
+    breadcrumbsItems();
+</script>

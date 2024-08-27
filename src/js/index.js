@@ -37,4 +37,7 @@ swiperServicesV2();
 import startTimers from "./modules/startTimer.js";
 startTimers();
 
+import videoGroup from "./modules/videoGroup.js";
+videoGroup();
+
 document.getElementById("copyright").textContent = new Date().getFullYear();

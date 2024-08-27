@@ -87,22 +87,19 @@
 						<ul class="header-nav__list" id="headerUl">
 							<li class="header-nav__item"><a class="active header-nav__link" href="./index.html">Home</a></li>
 							<li class="header-nav__item"><a class="header-nav__link" href="about.html">About</a></li>
-							<li class="header-nav__item"><a class="header-nav__link menu-has-children"
-									href="#!">Services</a>
+							<li class="header-nav__item"><a class="header-nav__link menu-has-children">Services</a>
 								<ul class="sub-menu">
-									<li><a href="#!" class="sub-menu__txt">Services</a></li>
-									<li><a href="#!" class="sub-menu__txt">Service Details</a></li>
+									<li><a href="services.html" class="sub-menu__txt">Services</a></li>
+									<li><a href="service-details.html" class="sub-menu__txt">Service Details</a></li>
 								</ul>
 							</li>
-							<li class="header-nav__item"><a class="header-nav__link menu-has-children"
-									href="#!">Team</a>
+							<li class="header-nav__item"><a class="header-nav__link menu-has-children">Team</a>
 								<ul class="sub-menu">
 									<li><a href="#!" class="sub-menu__txt">Team</a></li>
 									<li><a href="#!" class="sub-menu__txt">Team Details</a></li>
 								</ul>
 							</li>
-							<li class="header-nav__item"><a class="header-nav__link menu-has-children"
-									href="#!">Blog</a>
+							<li class="header-nav__item"><a class="header-nav__link menu-has-children">Blog</a>
 								<ul class="sub-menu">
 									<li><a href="#!" class="sub-menu__txt">Blog</a></li>
 									<li><a href="#!" class="sub-menu__txt">Blog Details</a></li>
@@ -135,10 +132,10 @@
                     <a class="header-mobile-nav__link" href="about.html">About</a>
                 </li>
                 <li class="header-mobile-nav__item">
-                    <a class="header-mobile-nav__link menu-has-children" href="#!" data-name="accordeon-title">Services</a>
+                    <a class="header-mobile-nav__link menu-has-children" data-name="accordeon-title">Services</a>
                     <ul class="sub-menu hidden">
-                        <li><a href="#!" class="sub-menu__txt">Services</a></li>
-                        <li><a href="#!" class="sub-menu__txt">Service Details</a></li>
+                        <li><a href="services.html" class="sub-menu__txt">Services</a></li>
+                        <li><a href="service-details.html" class="sub-menu__txt">Service Details</a></li>
                     </ul>
                 </li>
                 <li class="header-mobile-nav__item"><a class="header-mobile-nav__link menu-has-children" href="#!" data-name="accordeon-title">Team</a>
@@ -204,16 +201,35 @@
 	<main class="main">
 		<section class="breadcrumbs">
     <div class="container">
-        <h1 class="breadcrumbs-title title-center">About Us</h1>
+        <h1 class="breadcrumbs-title title-center" id="breadcrumbs-title">About Us</h1>
         <nav class="breadcrumbs-nav">
             <ul class="breadcrumbs-nav__ul d-flex jc-center ai-center">
                 <li class="breadcrumbs-nav__li"><a href="index.html" class="breadcrumbs-nav__link">Home</a></li>
                 <li>/</li>
-                <li class="breadcrumbs-nav__li"><span class="breadcrumbs-nav__last">About Us</span></li>
+                <li class="breadcrumbs-nav__li"><span class="breadcrumbs-nav__last" id="breadcrumbs-last">About
+                        Us</span></li>
             </ul>
         </nav>
     </div>
 </section>
+
+<script>
+    const breadcrumbsItems = () => {
+        const pageTitles = {
+            "about.html": "About Us",
+            "services.html": "Services",
+            "service-details.html": "Service Details",
+            "contact.html": "Contact Us",
+        };
+        const currentPath = window.location.pathname.split('/').pop();
+
+        if (pageTitles[currentPath]) {
+            document.getElementById('breadcrumbs-title').textContent = pageTitles[currentPath];
+            document.getElementById('breadcrumbs-last').textContent = pageTitles[currentPath];
+        }
+    }
+    breadcrumbsItems();
+</script>
 		<section class="about-v2 py-80">
     <div class="container">
         <div class="about-v2-content d-flex">
