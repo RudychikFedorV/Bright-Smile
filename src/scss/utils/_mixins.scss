@@ -1,6 +1,7 @@
 // breakpoints
 $desktop: 1375px;
 $desktop-small: 1200px;
+$desktop-bady: 1100px;
 $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
@@ -14,6 +15,11 @@ $mobile-small: 480px;
 }
 @mixin desktop-small {
   @media (max-width: $desktop-small) {
+    @content;
+  }
+}
+@mixin desktop-bady {
+  @media (max-width: $desktop-bady) {
     @content;
   }
 }
