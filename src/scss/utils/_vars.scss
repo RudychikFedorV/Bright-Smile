@@ -3,6 +3,7 @@
   --sf: "Comfortaa", sans-serif;
   --tf: "Lato", sans-serif;
   --transition: 0.4s all ease-in-out;
+  --transition-1: 0.5s 0.5s all ease-in-out;
   --transition-2: 0.6s all ease-in-out;
 
   --txt-900-80-100-ff: normal 900 80px / 100% var(--ff);
@@ -16,8 +17,10 @@
   --txt-700-35-100-ff: normal 700 35px / 100% var(--ff);
   --txt-700-34-149-ff: normal 700 34px / 149% var(--ff);
   --txt-700-44-149-ff: normal 700 44px / 149% var(--ff);
+  --txt-700-28-100-ff: normal 700 28px / 100% var(--ff);
   --txt-700-25-119-ff: normal 700 25px / 119% var(--ff);
   --txt-700-24-185-ff: normal 700 24px / 185% var(--ff);
+  --txt-700-24-170-ff: normal 700 24px / 170% var(--ff);
   --txt-700-21-126-ff: normal 700 21px / 126% var(--ff);
   --txt-700-20-198-ff: normal 700 20px / 198% var(--ff);
   --txt-700-20-160-ff: normal 700 20px / 160% var(--ff);
@@ -30,6 +33,7 @@
   --txt-700-14-100-ff: normal 700 14px / 100% var(--ff);
   --txt-600-20-100-ff: normal 600 20px / 100% var(--ff);
   --txt-500-65-147-ff: normal 500 65px / 147% var(--ff);
+  --txt-500-24-100-ff: normal 500 24px / 100% var(--ff);
   --txt-500-22-149-ff: normal 500 22px / 149% var(--ff);
   --txt-500-22-132-ff: normal 500 22px / 132% var(--ff);
   --txt-500-19-132-ff: normal 500 19px / 132% var(--ff);
@@ -44,6 +48,7 @@
   --txt-400-18-100-ff: normal 400 18px / 100% var(--ff);
   --txt-400-16-198-ff: normal 400 16px / 198% var(--ff);
   --txt-400-16-185-ff: normal 400 16px / 185% var(--ff);
+  --txt-400-16-180-ff: normal 400 16px / 180% var(--ff);
   --txt-400-16-170-ff: normal 400 16px / 170% var(--ff);
   --txt-400-16-160-ff: normal 400 16px / 160% var(--ff);
   --txt-400-16-155-ff: normal 400 16px / 155% var(--ff);
@@ -92,6 +97,10 @@
   --color-28: #362f2f;
   --color-29: #2673bc;
   --color-30: #dfd4d4;
+  --color-31: #b4b4b4;
+  --color-32: #cfebff;
+  --color-33: #c2d1e0;
+  --color-34: #888686;
   --c-background-faq: #00afff;
   --c-background-popup: rgba(48, 118, 184, 0.9);
   --c-background-newsletter: rgba(37, 129, 217, 0.9);
