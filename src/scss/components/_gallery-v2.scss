@@ -1,0 +1,34 @@
+.gallery-v2 {
+  &-row {
+    gap: 30px;
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    max-height: 420px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    @include tablet {
+      width: calc(33.333% - 14px);
+    }
+    @include tablet-small{
+        width: calc(50% - 10px); 
+    }
+    @include mobile-small{
+        width: 100%; 
+    }
+    &:hover .gallery-popup {
+      opacity: 1;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+ }
