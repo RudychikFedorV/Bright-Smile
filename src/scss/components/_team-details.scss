@@ -1,0 +1,241 @@
+.team-details {
+  @include mobile {
+    padding: 60px 0;
+  }
+  &-content {
+    gap: 40px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  // team details left START
+  &-left {
+    max-width: 380px;
+    width: 100%;
+    position: sticky;
+    top: 15px;
+    height: 100%;
+    @include tablet {
+      top: inherit;
+      max-width: inherit;
+    }
+    &__img {
+      border-radius: 20px;
+      max-height: 506px;
+      height: 100%;
+      overflow: hidden;
+      margin-bottom: 35px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font: var(--txt-700-28-185-ff);
+      color: var(--color-9);
+      margin-bottom: 20px;
+    }
+
+    &__block {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 15px;
+      h4 {
+        font: var(--txt-700-18-185-ff);
+        color: var(--color-9);
+      }
+      a {
+        display: block;
+        font: var(--txt-400-18-185-ff);
+        color: var(--color-9);
+      }
+    }
+    &__social {
+      padding-top: 18px;
+      gap: 15px;
+      &-icon {
+        padding: 9px;
+        border-radius: 100%;
+        background-color: var(--color-37);
+        transition: var(--transition);
+        &:hover {
+          background-color: var(--color-1);
+        }
+        &:hover img {
+          filter: brightness(10);
+        }
+        img {
+          display: block;
+          width: 14px;
+          height: 14px;
+          transition: var(--transition);
+        }
+      }
+    }
+  }
+  // team details left END
+
+  // team details right START
+  &-right {
+    max-width: 780px;
+    width: 100%;
+    &__title {
+      font: var(--txt-700-44-149-ff);
+      color: var(--color-9);
+      margin-bottom: 10px;
+      @include mobile {
+        font: var(--txt-700-34-149-ff);
+      }
+    }
+    &__spec {
+      font: var(--txt-500-20-149-ff);
+      text-transform: uppercase;
+      color: var(--color-text);
+      margin-bottom: 24px;
+      @include mobile {
+        font: var(--txt-500-18-147-ff);
+      }
+    }
+    &__desc {
+      font: var(--txt-400-16-185-ff);
+      color: var(--color-text);
+      margin-bottom: 35px;
+    }
+    h2 {
+      font: var(--txt-700-28-185-ff);
+      color: var(--color-9);
+      margin-bottom: 10px;
+      @include mobile {
+        font: var(--txt-700-23-185-ff);
+      }
+    }
+    &__info {
+      font: var(--txt-400-16-185-ff);
+      color: var(--color-text);
+      margin-bottom: 44px;
+    }
+  }
+  .why-item__text-name,
+  .why-item__text-percent {
+    @include mobile {
+      font: var(--txt-700-18-198-ff);
+      color: var(--color-black);
+    }
+  }
+  .about-v2-list {
+    column-count: 1;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 40px;
+  }
+  .about-v2-item {
+    font: var(--txt-400-16-185-ff);
+    color: var(--color-black);
+    margin: 0;
+    &:nth-last-child(n + 2) {
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    @include mobile-small {
+      font: var(--txt-400-14-185-ff);
+    }
+  }
+  &-list {
+    column-count: 2;
+    column-gap: 20px;
+    margin-bottom: 30px;
+    @include tablet-small {
+      column-count: 1;
+    }
+  }
+  &-item {
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 380px;
+    background-color: var(--color-38);
+    margin-bottom: 20px;
+    background-image: url(../img/team-details/calendar.svg);
+    background-size: 34px 34px;
+    background-repeat: no-repeat;
+    background-position: right 30px top 30px;
+    @include tablet-small {
+      max-width: inherit;
+      width: 100%;
+    }
+    @include mobile {
+      padding: 20px;
+      background-position: right 20px top 20px;
+    }
+  }
+  &-name {
+    font: var(--txt-700-20-100-ff);
+    color: var(--color-9);
+    margin-bottom: 18px;
+  }
+  &-time {
+    font: var(--txt-400-14-185-ff);
+    color: var(--color-9);
+  }
+
+  &-form {
+    position: relative;
+    text-align: center;
+    border: 1px solid var(--color-39);
+    border-radius: 20px;
+    padding: 35px 40px 55px;
+    @include mobile {
+      padding: 15px 10px 25px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--color-1);
+      border-radius: 0 19px;
+      background-image: url(../../img/team-details/user.svg);
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-position: center center;
+      width: 70px;
+      height: 70px;
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        background-size: 25px 25px;
+      }
+      @include mobile-small {
+        width: 40px;
+        height: 40px;
+        background-size: 20px 20px;
+      }
+    }
+    &__title {
+      text-align: start;
+    }
+  }
+  .form-input {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 20px;
+    @include tablet-small {
+      flex-direction: column;
+      input {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .btns {
+    width: 100%;
+    margin-top: 23px;
+  }
+  // team details right END
+}
