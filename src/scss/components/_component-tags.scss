@@ -1,0 +1,20 @@
+.component-tags {
+  &__list {
+    gap: 10px;
+  }
+  &__link {
+    display: block;
+    padding: 11px 15px;
+    border-radius: 20px;
+    padding: 11px 15px;
+    background-color: var(--c-text-white);
+    font: var(--txt-500-12-100-ff);
+    text-transform: uppercase;
+    color: var(--color-43);
+    transition: var(--transition);
+    &:hover {
+      color: var(--c-text-white);
+      background-color: var(--color-43);
+    }
+  }
+}

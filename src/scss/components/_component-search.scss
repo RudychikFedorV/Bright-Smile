@@ -1,0 +1,14 @@
+.widget {
+    background-color: var(--color-32);
+    border-radius: 20px;
+    padding: 30px;
+    @include desktop-bady {
+      padding: 15px;
+    }
+    @include tablet {
+      padding: 30px;
+    }
+    @include mobile-small {
+      padding: 15px;
+    }
+  }

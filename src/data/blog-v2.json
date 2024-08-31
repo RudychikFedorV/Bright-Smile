@@ -1,0 +1,29 @@
+[
+  {
+    "IMG": "03",
+    "name": "MindfulDesign",
+    "day": "May 15, 2024",
+    "comments": "5 Comments",
+    "title": "Technologies in the Treatment",
+    "desc": "A practical guide aimed at homeowners looking to renovate their properties to boost market value. The article offers tips for enhancing both the interior and exterior, emphasizes the importance of choosing high-quality materials and professional contractors...",
+    "link": "blog-details.html"
+  },
+  {
+    "IMG": "02",
+    "name": "MindfulDesign",
+    "day": "May 22, 2024",
+    "comments": "9 Comments",
+    "title": "Technologies in the Treatment",
+    "desc": "A practical guide aimed at homeowners looking to renovate their properties to boost market value. The article offers tips for enhancing both the interior and exterior, emphasizes the importance of choosing high-quality materials and professional contractors...",
+    "link": "team-details.html"
+  },
+  {
+    "IMG": "01",
+    "name": "MindfulDesign",
+    "day": "May 30, 2024",
+    "comments": "7 Comments",
+    "title": "Technologies in the Treatment",
+    "desc": "A practical guide aimed at homeowners looking to renovate their properties to boost market value. The article offers tips for enhancing both the interior and exterior, emphasizes the importance of choosing high-quality materials and professional contractors...",
+    "link": "404.html"
+  }
+]

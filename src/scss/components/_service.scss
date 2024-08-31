@@ -1,7 +1,7 @@
 .service {
   &-content {
     gap: 40px;
-    @include desktop-small {
+    @include tablet {
       flex-direction: column;
     }
   }
@@ -9,7 +9,7 @@
   // service details left START
   &-left {
     max-width: 780px;
-    @include desktop-small {
+    @include tablet {
       width: 100%;
       max-width: inherit;
     }
@@ -22,7 +22,7 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 40px;
-    @include desktop-small {
+    @include tablet {
       max-width: inherit;
     }
     @include mobile {
@@ -202,15 +202,10 @@
   &-right {
     max-width: 380px;
     width: 100%;
-    @include desktop-small {
+    @include tablet {
       max-width: inherit;
     }
-  }
-  .widget {
-    background-color: var(--color-32);
-    border-radius: 20px;
-    padding: 30px;
-  }
+  }  
   &-search {
     &__title {
       font: var(--txt-500-24-100-ff);
