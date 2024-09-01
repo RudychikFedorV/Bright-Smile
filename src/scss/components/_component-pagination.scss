@@ -1,0 +1,29 @@
+.pagination {
+  &-list {
+    gap: 15px;
+    @include mobile {
+      gap: 10px;
+    }
+  }
+  &-link {
+    display: inline-block;
+    padding: 13px 23px 9px 22px;
+    border-radius: 5px;
+    background-color: var(--color-45);
+    font: var(--txt-400-20-170-ff);
+    color: var(--color-46);
+    @include mobile {
+      font: var(--txt-400-16-170-ff);
+      padding: 11px 20px;
+    }
+  }
+  .active {
+    background: var(--color-1);
+    font: var(--txt-700-20-170-ff);
+    color: var(--c-text-white);
+    @include mobile {
+      font: var(--txt-700-16-170-ff);
+      padding: 11px 20px;
+    }
+  }
+}

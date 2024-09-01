@@ -1,0 +1,12 @@
+<section class="blog-details py-80">
+    <div class="container">
+        <div class="blog-details-content d-flex gap-40 service-content">
+            <div>
+                @@loop('blog-details-left.html', '../data/blog-details.json')
+            </div>
+            <div class="blog-details-right service-right">                
+                @@include('component-sidebar.html')
+            </div>
+        </div>
+    </div>
+</section>

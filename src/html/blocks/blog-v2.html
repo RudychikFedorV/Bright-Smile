@@ -3,11 +3,10 @@
         <div class="service-content d-flex">
             <div>
                 @@loop('blog-v2-left.html', '../data/blog-v2.json')
+                @@include('component-pagination.html')
             </div>
             <div class="blog-v2-right service-right">
-                <aside class="service-sidebar">
-                    @@include('component-sidebar.html')
-                </aside>
+                @@include('component-sidebar.html')
             </div>
         </div>
     </div>
