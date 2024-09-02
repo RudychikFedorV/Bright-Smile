@@ -146,6 +146,7 @@ select {
   padding: 15px 23px;
   outline: none;
   width: 100%;
+  resize: vertical;
   font: var(--txt-400-16-100-ff);
   color: var(--color-9);
   &::placeholder {

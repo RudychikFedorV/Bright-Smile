@@ -1,0 +1,126 @@
+.contact {
+  @include mobile {
+    padding: 40px 0;
+  }
+  &-content {
+    position: relative;
+    gap: 38px;
+    padding: 40px 60px 40px 40px;
+    box-shadow: -1px 0 34px 1px rgba(98, 136, 172, 0.15);
+    background-color: var(--color-3);
+    border-radius: 20px 20px 0 20px;
+    @include mobile {
+      padding: 20px;
+    }
+    @include mobile-small {
+      padding: 10px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--color-1);
+      border-radius: 0 19px;
+      background-image: url(../img/contact/sms.svg);
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-position: center center;
+      width: 70px;
+      height: 70px;
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        background-size: 20px 20px;
+      }
+      @include mobile-small {
+        width: 40px;
+        height: 40px;
+        background-size: 15px 15px;
+      }
+    }
+  }
+  &-content {
+    @include tablet {
+      flex-direction: column;
+      padding-top: 60px;
+    }
+    @include mobile-small {
+      padding-top: 45px;
+    }
+  }
+  // contact-left START
+  &-left {
+    max-width: 456px;
+    width: 100%;
+    background-color: var(--color-1);
+    border-radius: 20px;
+    padding: 40px 35px 80px;
+    @include tablet {
+      max-width: inherit;
+    }
+    @include mobile {
+      padding: 20px;
+    }
+    @include mobile-small {
+      padding: 10px;
+    }
+    &__title {
+      font: var(--txt-700-35-149-ff);
+      color: var(--c-text-white);
+      margin-bottom: 14px;
+    }
+    &__desc {
+      font: var(--txt-400-16-185-ff);
+      color: var(--color-52);
+      margin-bottom: 35px;
+    }
+    .header-item {
+      padding: 0;
+      &:nth-last-child(n + 2) {
+        border-right: none;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  // contact-left END
+
+  // contact-left START
+  &-right {
+    max-width: 597px;
+    width: 100%;
+    @include tablet {
+      max-width: inherit;
+    }
+    &__title {
+      font: var(--txt-700-32-149-ff);
+      color: var(--color-9);
+      margin-bottom: 5px;
+    }
+    &__desc {
+      font:var(--txt-400-16-185-ff);
+      color: var(--color-text);
+      margin-bottom: 30px;
+    }
+    .form-input {
+      display: flex;
+      column-gap: 16px;
+      margin-bottom: 20px;
+      @include tablet-small {
+        margin-bottom: 0;
+        flex-direction: column;
+        input {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    textarea {
+      min-height: 185px;
+    }
+    .btns {
+      margin-top: 20px;
+    }
+  }
+  // contact-left END
+}

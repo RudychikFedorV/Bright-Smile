@@ -200,7 +200,7 @@
       right: 0;
       background: var(--color-1);
       border-radius: 0 19px;
-      background-image: url(../../img/team-details/user.svg);
+      background-image: url(../img/team-details/user.svg);
       background-repeat: no-repeat;
       background-size: 32px 32px;
       background-position: center center;
@@ -209,12 +209,12 @@
       @include mobile {
         width: 50px;
         height: 50px;
-        background-size: 25px 25px;
+        background-size: 20px 20px;
       }
       @include mobile-small {
         width: 40px;
         height: 40px;
-        background-size: 20px 20px;
+        background-size: 15px 15px;
       }
     }
     &__title {

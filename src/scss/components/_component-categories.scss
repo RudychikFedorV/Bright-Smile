@@ -40,10 +40,10 @@
       transform: none;
     }
     &:hover {
-      color: var(--c-text-white);
+      color: var(--color-1);
     }
     &:hover::before {
-      filter: brightness(10);
+      filter: brightness(0);
       transition: var(--transition-2);
     }
   }
