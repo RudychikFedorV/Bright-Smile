@@ -9,8 +9,9 @@
     width: 100%;
     transform: translateY(-110%);
     transition: var(--transition-2);
-    z-index: 999;
+    // z-index: 1000;
   }
+
   &-top {
     background: var(--color-5);
     padding: 13px 20px;

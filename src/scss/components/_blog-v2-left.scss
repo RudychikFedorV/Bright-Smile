@@ -18,6 +18,7 @@
   height: 420px;
   @include tablet {
     max-width: inherit;
+    z-index: -1;
   }
   @include mobile {
     height: 282px;
@@ -41,6 +42,9 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    @include mobile-small{
+      padding: 15px;
+    }
   }
   &__block {
     display: flex;
