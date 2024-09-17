@@ -2,17 +2,15 @@
   display: none;
   @include tablet {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     max-width: 320px;
     width: 100%;
     transform: translateY(-110%);
     transition: var(--transition-2);
-    // z-index: 1000;
   }
-
-  &-top {
+   &-top {
     background: var(--color-5);
     padding: 13px 20px;
   }
@@ -107,4 +105,8 @@
 }
 .header-mobile.is-active {
   transform: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
