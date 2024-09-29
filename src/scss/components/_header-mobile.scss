@@ -1,5 +1,7 @@
 .header-mobile {
   display: none;
+  height: 100vh;
+  overflow-y: auto;
   @include tablet {
     display: block;
     position: fixed;
@@ -10,7 +12,7 @@
     transform: translateY(-110%);
     transition: var(--transition-2);
   }
-   &-top {
+  &-top {
     background: var(--color-5);
     padding: 13px 20px;
   }
@@ -20,17 +22,23 @@
 
   // header-mobile-nav
   &-nav__link {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     font: var(--txt-400-16-100-ff);
     color: var(--color-black);
     border-bottom: 1px solid var(--color-24);
     margin-top: 15px;
     padding: 0px 20px 18px;
-    transition: var(--transition-2);
+    transition: var(--transition);
     &:hover {
       color: var(--color-1);
+    }
+    &:hover .menu-item-plus {
+      transform: rotate(45deg);
+      background-color: var(--color-1);
+      color: var(--c-text-white);
     }
   }
   .active {
@@ -56,17 +64,13 @@
   .hidden {
     display: none;
   }
-
   .menu-item-plus {
-    position: absolute;
-    right: 20px;
-    top: calc(50% - 9px);
-    transform: translateY(-50%);
     width: 25px;
     height: 25px;
     border-radius: 100%;
     background-color: var(--color-25);
     @include flex-center-center;
+    transition: var(--transition);
   }
 
   .header-info {
